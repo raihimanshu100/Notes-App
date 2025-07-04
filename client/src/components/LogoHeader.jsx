@@ -1,4 +1,4 @@
-// client/src/components/LogoHeader.jsx
+
 import React from 'react';
 
 const LogoHeader = ({ align = 'center' }) => {
