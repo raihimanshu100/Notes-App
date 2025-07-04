@@ -1,0 +1,652 @@
+/* ==========================
+   Global & Reset Styles
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fa;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+/* ==========================
+   Signup Layout & Wrapper
+========================== */
+.signup-wrapper {
+  display: flex;
+  height: 100vh;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form-container {
+  flex: 1;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+
+.signup-form-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.signup-form-container p {
+  font-size: 1rem;
+  color: #7b7b7b;
+  margin-bottom: 2rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-form label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.signup-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.signup-form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.signup-form button {
+  background-color: #2979ff;
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.signup-form button:hover {
+  background-color: #1565c0;
+}
+
+.signup-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #555;
+}
+
+.signup-footer a {
+  color: #2979ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Login Page Styling
+========================== */
+.login-container {
+  max-width: 420px;
+  margin: 6rem auto;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.login-container .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.email-btn {
+  background-color: #2979ff;
+  color: white;
+  border: none;
+}
+
+/* ==========================
+   OTP Verify Page Styling
+========================== */
+.otp-container {
+  max-width: 420px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.otp-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.otp-container input {
+  padding: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.otp-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ==========================
+   Dashboard Styling
+========================== */
+.dashboard-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.05);
+}
+
+.note-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.note-form input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.note-form button {
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.note-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.note-card button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ==========================
+   Mobile Responsive
+========================== */
+@media (max-width: 768px) {
+  .signup-wrapper {
+    flex-direction: column;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .signup-image-container {
+    display: none;
+  }
+
+  .signup-form-container {
+    padding: 2rem 1.5rem;
+    align-items: center;
+  }
+
+  .signup-form-container h1 {
+    font-size: 2rem;
+  }
+
+  .signup-form-container p {
+    font-size: 0.95rem;
+  }
+
+  .signup-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .note-form {
+    flex-direction: column;
+  }
+
+  .note-form button {
+    width: 100%;
+  }
+}
+/* ================================
+   Landing Page (Welcome Page)
+================================= */
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f9f9f9;
+}
+
+.landing-box {
+  text-align: center;
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  width: 90%;
+}
+
+.landing-box h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.landing-box p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.google-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.google-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.email-btn {
+  background-color: #2979ff;
+  color: white;
+}
+
+.email-btn:hover {
+  background-color: #1565c0;
+}
+
+/* ==========================
+   OTP Page Styling
+========================== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f4f6fa;
+  text-align: center;
+}
+
+.auth-container form {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.auth-container input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.auth-container input:focus {
+  border-color: #3b82f6;
+}
+
+.auth-container button {
+  background-color: #2979ff;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #1565c0;
+}
+
+.dashboard-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  color: #1a73e8;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-card {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.create-note-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #2979ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.notes-section h3 {
+  margin-bottom: 1rem;
+}
+
+.note-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+}
+
+/* ---- Login Page Styling ---- */
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-form-side {
+  width: 50%;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.login-content {
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.login-content p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #1e40af;
+}
+
+.login-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.login-image-side {
+  width: 50%;
+  background-color: #f0f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* @media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-form-side,
+  .login-image-side {
+    width: 100%;
+    height: 50%;
+  }
+
+  .login-form-side {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-form-side {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .login-image-side {
+    display: none;
+  }
+} */
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-form-side {
+    width: 100%;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .login-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-image-side {
+    display: none;
+  }
+
+  form input,
+  form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+
+
+
+
+
