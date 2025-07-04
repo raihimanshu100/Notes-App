@@ -1,6 +1,4 @@
-/* ==========================
-   Global & Reset Styles
-========================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/* ==========================
-   Signup Layout & Wrapper
-========================== */
+
 .signup-wrapper {
   display: flex;
   height: 100vh;
@@ -111,9 +107,7 @@ body {
   text-decoration: underline;
 }
 
-/* ==========================
-   Login Page Styling
-========================== */
+
 .login-container {
   max-width: 420px;
   margin: 6rem auto;
@@ -154,9 +148,6 @@ body {
   border: none;
 }
 
-/* ==========================
-   OTP Verify Page Styling
-========================== */
 .otp-container {
   max-width: 420px;
   margin: 5rem auto;
@@ -193,9 +184,7 @@ body {
   font-weight: 600;
 }
 
-/* ==========================
-   Dashboard Styling
-========================== */
+
 .dashboard-container {
   max-width: 800px;
   margin: 3rem auto;
@@ -262,9 +251,7 @@ body {
   font-weight: 600;
 }
 
-/* ==========================
-   Mobile Responsive
-========================== */
+
 @media (max-width: 768px) {
   .signup-wrapper {
     flex-direction: column;
@@ -302,9 +289,7 @@ body {
     width: 100%;
   }
 }
-/* ================================
-   Landing Page (Welcome Page)
-================================= */
+
 .landing-container {
   display: flex;
   justify-content: center;
@@ -374,9 +359,7 @@ body {
   background-color: #1565c0;
 }
 
-/* ==========================
-   OTP Page Styling
-========================== */
+
 .auth-container {
   display: flex;
   justify-content: center;
@@ -503,7 +486,7 @@ body {
   }
 }
 
-/* ---- Login Page Styling ---- */
+
 .login-page {
   display: flex;
   height: 100vh;
