@@ -10,7 +10,6 @@ const Login = () => {
   const [dob, setDob] = useState('');
   const [otp, setOtp] = useState('');
 
-  // ✅ Redirect if already logged in
   useEffect(() => {
     const checkSession = async () => {
       try {
