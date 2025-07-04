@@ -2,9 +2,7 @@ import User from '../models/User.js';
 import { sendOTP } from '../utils/mailer.js';
 import { setOtp, verifyOtp } from '../tempOtpStore.js';
 
-// ---------------------------
-// 📤 Send OTP to Email
-// ---------------------------
+
 export const sendOtpController = async (req, res) => {
   const { email } = req.body;
   if (!email) return res.status(400).json({ message: 'Email is required' });
@@ -16,9 +14,6 @@ export const sendOtpController = async (req, res) => {
   res.status(200).json({ message: 'OTP sent to email' });
 };
 
-// ---------------------------
-// ✅ Verify OTP & Create/Reuse User
-// ---------------------------
 export const verifyOtpController = async (req, res) => {
   const { email, otp, name, dob } = req.body;
 
@@ -45,9 +40,7 @@ export const verifyOtpController = async (req, res) => {
   }
 };
 
-// ---------------------------
-// 🚪 Logout
-// ---------------------------
+
 export const logoutController = (req, res) => {
   req.session.destroy(() => {
     res.clearCookie('connect.sid');
@@ -55,9 +48,7 @@ export const logoutController = (req, res) => {
   });
 };
 
-// ---------------------------
-// 👤 Get Logged-in User
-// ---------------------------
+
 export const getUserController = (req, res) => {
   if (req.session.user) {
     res.status(200).json(req.session.user);
