@@ -1,10 +1,10 @@
-// server/tempOtpStore.js
+
 const otpMap = new Map();
 
 export const setOtp = (email, otp) => {
   otpMap.set(email, {
     otp,
-    expiresAt: Date.now() + 5 * 60 * 1000 // 5 minutes
+    expiresAt: Date.now() + 5 * 60 * 1000 
   });
 };
 
